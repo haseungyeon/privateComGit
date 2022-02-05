@@ -14,7 +14,7 @@ function Hello(props){
             <div> {props.name}님, 안녕하세요</div>
             <div style={style}>{name}</div>
             <div className="gray-box"></div>
-            <div style={{color:props.color}}></div>
+            <div style={{color:props.color}}>textColor</div>
         </>
     )
 }

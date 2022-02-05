@@ -3,11 +3,12 @@ import './App.css'
 class HelloClass extends Component{
     render(){
       return(
-        <div>
+        <>
           <div>안녕하세요</div>
-          <div style="gray-box"></div>
-          <div></div>
-        </div>
+          <div className="gray-box"></div>
+          <div style={{color:this.props.color}}>classColor</div>
+          <div> age is {this.props.age}</div>
+        </>
       );
     }
   }

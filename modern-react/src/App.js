@@ -2,14 +2,17 @@
 // import './App.css';
 
 import Hello from './Hello';
-// import HelloClass from './HelloClass'
+import React from 'react';
+import HelloClass from './HelloClass'
+import Blank from './Blank'
 
 function App() {
   const name = 'name';
   return (
     <div className="hi">
       <Hello name={name} color="red"></Hello>
-      {/* <HelloClass color="blue"></HelloClass>  */}
+      <Blank></Blank>
+      <HelloClass color="blue" age="11"></HelloClass>
     </div>
   );
 }
