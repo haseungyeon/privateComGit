@@ -1,18 +1,22 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import Hello from './Hello';
 import React from 'react';
+import Hello from './Hello';
+import Wrapper from './Wrapper'
 import HelloClass from './HelloClass'
 import Blank from './Blank'
 
 function App() {
-  const name = 'name';
+  const name = 'Seungyeon';
   return (
     <div className="hi">
-      <Hello name={name} color="red"></Hello>
-      <Blank></Blank>
-      <HelloClass color="blue" age="11"></HelloClass>
+      <Wrapper>
+        <Hello name={name} color="red"></Hello>
+        <Hello color='pink'></Hello>
+      </Wrapper>
+      {/* <Blank></Blank>
+      <HelloClass color="blue" age="11"></HelloClass> */}
     </div>
   );
 }
